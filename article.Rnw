@@ -16,6 +16,14 @@
 \usepackage{todonotes}
 \newcommand{\fixc}[2]{\fix{#1}\todo{#2}}
 
+% Set line double spacing 
+\usepackage{setspace}
+\doublespacing % or \onehalfspacing
+
+% Use line numbers 
+\usepackage{lineno}
+\linenumbers
+
 \begin{document}
 
 \SweaveOpts{concordance=FALSE}
@@ -136,6 +144,13 @@ three steps:
 The following sections the rationale behind each task and how they can be 
 performed using the package \emph{spatialwarnings}, for non-periodic and 
 periodic spatial patterns. 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=1\textwidth]{./figures/flowchart.pdf}
+  \caption{An EWS flowchart}
+  \label{fig:flowchart}
+\end{figure}
 
 \section{Indicators for non-periodic patterns}
 

@@ -1,4 +1,4 @@
-\documentclass{article}
+﻿\documentclass{article}
 \usepackage[utf8x]{inputenc}
 
 % Bibliography mgmt
@@ -23,7 +23,7 @@
 <<echo=FALSE>>=
   options(prompt = "R> ", continue = "+  ", width = 70, useFancyQuotes = FALSE)
   library(devtools)
-  try(install_github('fdschneider/spatial_warnings'))
+  try(install_github('spatial-ews/spatialwarnings'))
   library(spatialwarnings)
 @
 
@@ -65,16 +65,16 @@ to the same population far from a threshold. These properties are expected to
 yield a specific signature on their temporal and spatial dynamics. For example, 
 systems close to thresholds should exhibit higher variance, skewness and spatial 
 autocorrelation. In systems dominated by sessile organisms (e.g. plants, mussel
-beds), a specific spatial signature is expected to arise close to the tipping 
+beds), an equivalent spatial signature is expected to arise close to the tipping 
 point. 
 
 These "early-warning" signals have gathered much attention in the past years. 
 One of the challenge ahead relies in knowing how general these type of 
 transitions are and how precisely we can identify thresholds. One way forward 
-is to generalize the use of these early-warning signals by making them available 
+is to assist the use of these early-warning signals by making them available 
 so that a wider audience can contribute to this effort. To this end, we 
 developed the \emph{R} package \emph{spatialwarnings} which goal is to 
-facilitate the computation of spatial indicators and assess their significance, 
+facilitate the computation of spatial indicators, assess their significance, 
 to foster the interest in applying these indicators to real-world datasets 
 while maintaining a common methodology. This package contains a set of 
 functions that can be readily applied on spatial raster datasets such as 
